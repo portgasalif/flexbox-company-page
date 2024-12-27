@@ -44,9 +44,9 @@ body {
 }
 
 .main-banner {
-    min-height: 600px;
+    height: 600px;
     width: 100%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1521543387600-c745f8e83d77?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1521543387600-c745f8e83d77?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,20 +58,96 @@ body {
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.5);
     width: 50%;
+    min-width: 300px;
     position: absolute;
     left: 5%;
     bottom: 5%;
 }
 
-.banner-content h1{
-    font-size: 4rem;
+.banner-content h1 {
+    font-size: 3.5rem;
     margin-bottom: 1rem;
 }
 
-.banner-content p{
+.banner-content p {
     font-size: 2rem;
 
 }
+
+.package h2 {
+    margin: 2rem auto;
+    font-size: 3rem;
+    text-align: center;
+    color: #002349;
+
+}
+
+.package-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.package-card {
+    height: 450px;
+    width: 400px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.package-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.sewa {
+    background-image: url('https://plus.unsplash.com/premium_photo-1663076211121-36754a46de8d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.silver {
+    background-image: url('https://images.unsplash.com/photo-1520342868574-5fa3804e551c?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.gold {
+    background-image: url('https://plus.unsplash.com/premium_photo-1664530452554-480b1ef08733?q=80&w=2594&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.platinum {
+    background-image: url('https://plus.unsplash.com/premium_photo-1711189389479-922a74f2263a?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+}
+
+.diamond {
+    background-image: url('https://images.unsplash.com/photo-1470081833024-ea74fc435177?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+.card-info {
+    background-color: #FAFAD2;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.card-info h3 {
+    font-size: 1.5rem;
+}
+
+.card-info p {
+    font-size: 1rem;
+}
+
 @media screen and (max-width:768px) {
     header {
         padding: 1rem 3%;
@@ -90,18 +166,44 @@ body {
     }
 
     .main-banner {
-        min-height: 500px;
-    
+        height: 500px;
+
     }
-    .banner-content h1{
-        font-size: 1.75rem;
-       
+
+    .banner-content {
+        min-width: 250px;
     }
-    
-    .banner-content p{
+
+    .banner-content h1 {
+        font-size: 2.5rem;
+
+    }
+
+    .banner-content p {
         width: 90%;
         font-size: 1rem;
-        
+
+    }
+
+    .package h2 {
+        font-size: 2.5rem;
+    }
+
+    .package-card {
+        height: 350px;
+        width: 300px;
+    }
+
+    .card-info {
+        padding: 0.75rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-info p {
+        font-size: 1rem;
     }
 }
 
@@ -124,16 +226,42 @@ body {
     }
 
     .main-banner {
-        min-height: 400px;
+        height: 400px;
 
     }
-    .banner-content h1{
-        font-size: 1.8rem;
-       
+
+    .banner-content {
+        min-width: 200px;
     }
-    
-    .banner-content p{
+
+    .banner-content h1 {
+        font-size: 2rem;
+
+    }
+
+    .banner-content p {
         font-size: 1rem;
-        
+
+    }
+
+    .package h2 {
+        font-size: 2rem;
+    }
+
+    .package-card {
+        height: 250px;
+        width: 200px;
+    }
+
+    .card-info {
+        padding: 0.5rem;
+    }
+
+    .card-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .card-info p {
+        font-size: 0.8rem;
     }
 }
