@@ -5,6 +5,17 @@
     border: 0;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Cardo', serif;
+}
+
+body,
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -87,6 +98,11 @@ body {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.package-container a {
+    color: #002349;
 }
 
 .package-card {
@@ -146,6 +162,50 @@ body {
 
 .card-info p {
     font-size: 1rem;
+}
+
+footer {
+    background-color: #002349;
+    color: #FAFAD2;
+    padding: 3rem 5%;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #FAFAD2;
+    transition: 0.3s;
+}
+
+.footer-content a:hover {
+    color: #D4AF37;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    margin-top: 2rem;
+    padding-top: 1rem;
+
 }
 
 @media screen and (max-width:768px) {
